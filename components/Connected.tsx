@@ -22,11 +22,11 @@ const Connected: FC = () => {
             noOfLines={1}
             textAlign="center"
           >
-            Welcome Buildoor.
+            Welcome trippy.
           </Heading>
 
           <Text color="bodyText" fontSize="xl" textAlign="center">
-            Each buildoor is randomly generated and can be staked to receive
+            Each trippy is randomly generated and can be staked to receive
             <Text as="b"> $BLD</Text> Use your <Text as="b"> $BLD</Text> to
             upgrade your buildoor and receive perks within the community!
           </Text>
@@ -43,7 +43,7 @@ const Connected: FC = () => {
 
       <Button bgColor="accent" color="white" maxW="380px">
         <HStack>
-          <Text>mint buildoor</Text>
+          <Text>mint trippy</Text>
           <ArrowForwardIcon />
         </HStack>
       </Button>

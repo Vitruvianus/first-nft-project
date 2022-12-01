@@ -6,6 +6,13 @@ import Head from "next/head"
 import styles from "../styles/Home.module.css"
 import { useWallet } from "@solana/wallet-adapter-react"
 import Connected from "../components/Connected"
+import dynamic from 'next/dynamic';
+
+// add this
+const WalletMultiButtonDynamic = dynamic(
+  async () => (await import('@solana/wallet-adapter-react-ui')).WalletMultiButton,
+  { ssr: false }
+);
 
 const Home: NextPage = () => {
   const { connected } = useWallet()
@@ -13,8 +20,8 @@ const Home: NextPage = () => {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Buildoors</title>
-        <meta name="The NFT Collection for Buildoors" />
+        <title>Trippy</title>
+        <meta name="The NFT Collection for Trippy" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -45,7 +52,7 @@ const Home: NextPage = () => {
           </Center>
         </Stack>
       </Box>
-      </div>
+    </div>
   )
 }
 
